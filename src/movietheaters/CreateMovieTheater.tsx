@@ -1,15 +1,13 @@
-import MovieTheaterForm from "./MovieThreaterForm";
-import Map from "../utils/Map"
+import MovieTheaterForm from './MovieTheaterForm'
+
 export default function CreateMovieTheater(){
     return (
         <>
             <h3>Create Movie Theater</h3>
-            <MovieTheaterForm
-                model = {{name:""}}
+            <MovieTheaterForm 
+                model={{name: ''}}
                 onSubmit={values => console.log(values)}
             />
-
-            
         </>
     )
 }

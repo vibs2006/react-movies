@@ -1,18 +1,17 @@
-import ActorForm from "./ActorForm";
+import ActorForm from './ActorForm'
 
 export default function EditActor(){
     return (
         <>
             <h3>Edit Actor</h3>
-            <ActorForm model=
-            {
-                {name : "Test 1", 
-                dateOfBirth : new Date("1999-01-01T00:00:00"),
-                pictureUrl : "https://m.media-amazon.com/images/M/MV5BOGIwYjZlOTctZTNhOC00OTdiLWI5ZWItOTdiMWRjMjUwMDlhXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_.jpg"
-                ,biography : `Test **Hellow** of BioGraphy`
-            }}
-            onSubmit={values => console.log(values)}
-            ></ActorForm>
+            <ActorForm model={{name: 'Tom Holland', 
+            dateOfBirth: new Date('1996-06-01T00:00:00'),
+            biography: `# Something
+This person was born in **DR**`,
+            pictureURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg/220px-Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg'
+        }}
+                onSubmit={values => console.log(values)}
+            />
         </>
     )
 }
